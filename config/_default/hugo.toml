@@ -1,0 +1,97 @@
+# See: https://gohugo.io/getting-started/configuration/
+
+[params]
+  #[[params.sns]]
+  #  url = ''
+  #  icon = 'fediverse.svg'
+  [[params.sns]]
+    url = 'blogspot.com'
+    icon = 'blogspot.svg'
+  [[params.sns]]
+    url = 'bsky.app'
+    icon = 'bluesky.svg'
+  [[params.sns]]
+    url = 'c.im'
+    icon = 'mastodon.png'
+  [[params.sns]]
+    url = 'c.wtf'
+    icon = 'rebased.svg'
+  [[params.sns]]
+    url = 'catodon.social'
+    icon = 'catodon.png'
+  [[params.sns]]
+    url = 'diasp.org'
+    icon = 'diaspora.svg'
+  [[params.sns]]
+    url = 'ebin.club'
+    icon = 'fediverse.svg'
+  [[params.sns]]
+    url = 'facebook.com'
+    icon = 'facebook.svg'
+  [[params.sns]]
+    url = 'fb.com'
+    icon = 'facebook.svg'
+  [[params.sns]]
+    url = 'fedia.io'
+    icon = 'mbin.svg'
+  [[params.sns]]
+    url = 'fedia.social'
+    icon = 'iceshrimp.png'
+  [[params.sns]]
+    url = 'instagram.com'
+    icon = 'instagram.svg'
+  [[params.sns]]
+    url = 'mastodon.online'
+    icon = 'mastodon.png'
+  [[params.sns]]
+    url = 'mastodon.social'
+    icon = 'mastodon.png'
+  [[params.sns]]
+    url = 'p.lu'
+    icon = 'peertube.svg'
+  [[params.sns]]
+    url = 'pixelfed.social'
+    icon = 'pixelfed.svg'
+  [[params.sns]]
+    url = 'plurk.com'
+    icon = 'plurk.svg'
+  [[params.sns]]
+    url = 'reddit.com'
+    icon = 'reddit.svg'
+  [[params.sns]]
+    url = 'socialhome.network'
+    icon = 'socialhome-black.svg'
+  [[params.sns]]
+    url = 'spoutible.com'
+    icon = 'spoutible.png'
+  [[params.sns]]
+    url = 'threads.net'
+    icon = 'threads.svg'
+  [[params.sns]]
+    url = 'tumblr.com'
+    icon = 'tumblr.svg'
+  [[params.sns]]
+    url = 'twitter.com'
+    icon = 'twitter.svg'
+  [[params.sns]]
+    url = 'wordpress.com'
+    icon = 'wordpress.svg'
+  [[params.sns]]
+    url = 'write.as'
+    icon = 'writefreely.png'
+  [[params.sns]]
+    url = 'x.com'
+    icon = 'x.svg'
+  [[params.sns]]
+    url = 'youtube.com'
+    icon = 'youtube.svg'
+
+  #[[params.sns]]
+  #  url = 'friendica.example'
+  #  icon = 'friendica.svg'
+  #[[params.sns]]
+  #  url = 'hubzilla.example'
+  #  icon = 'hubzilla.svg'
+  #[[params.sns]]
+  #  url = 'pleroma.com'
+  #  icon = 'fediverse.svg'
