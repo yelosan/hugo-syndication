@@ -1,0 +1,116 @@
+{{- /* HOW TO USE
+  1. Add this in your single-post template:
+    * partial "syndication.html" .
+
+  2. In your content files add the following:
+    * TOML: syndication = ["", ""]
+    * YAML:
+        syndication:
+          - ""
+          - ""
+    * JSON:
+        {
+          "syndication": ["", ""]
+        }
+*/}}
+{{- /*
+  Attributions and sources
+
+    Blogspot
+      - https://commons.wikimedia.org/wiki/File:Blogger_icon_2017.svg
+
+    Bluesky
+      - https://commons.wikimedia.org/wiki/File:Bluesky_Logo.svg
+
+    Catodon
+      - https://codeberg.org/catodon/catodon/src/branch/dev/packages/backend/assets/favicon.png
+
+    diaspora*
+      - https://github.com/diaspora/diaspora/blob/develop/graphics/app-icon.svg
+
+    Facebook
+      - https://commons.wikimedia.org/wiki/File:2023_Facebook_icon.svg
+
+    Fediverse
+      - https://commons.wikimedia.org/wiki/File:Fediverse_logo_proposal.svg
+
+    Friendica
+      - https://github.com/friendica/friendica/blob/2024.03-rc/images/friendica.svg
+
+    Hubzilla
+      - https://framagit.org/hubzilla/core/-/blob/master/images/app/hz.svg?ref_type=heads
+
+    Iceshrimp
+      - https://iceshrimp.dev/iceshrimp/iceshrimp/src/branch/dev/packages/backend/assets/favicon.png
+
+    Instagram
+      - https://commons.wikimedia.org/wiki/File:Instagram_logo_2022.svg
+
+    Mastodon
+    - https://github.com/mastodon/mastodon/blob/main/app/javascript/icons/favicon-48x48.png
+
+    Mbin
+      - https://github.com/MbinOrg/mbin/blob/main/assets/images/sources/mbin-notext.svg
+      - https://github.com/MbinOrg/mbin/blob/main/public/assets/icons/icon-1024x1024.svg
+
+    PeerTube
+      - https://github.com/Chocobozzz/PeerTube/blob/develop/client/src/assets/images/logo.svg
+
+    Pixelfed
+      - https://github.com/pixelfed/pixelfed/blob/dev/public/img/pixelfed-icon-color.svg
+
+    Pleroma
+      - https://git.pleroma.social/pleroma/pleroma/-/blob/develop/priv/static/static/logo.svg?ref_type=heads
+
+    Plurk
+      - https://commons.wikimedia.org/wiki/File:Plurk.svg
+
+    Rebased
+      - https://gitlab.com/soapbox-pub/soapbox/-/blob/main/src/assets/images/soapbox-logo.svg?ref_type=heads
+
+    Reddit
+      - https://commons.wikimedia.org/wiki/File:Snoo.svg
+
+    Socialhome
+      - https://github.com/jaywink/socialhome/blob/master/socialhome/static/images/logo/Socialhome-dark.svg
+      - https://github.com/jaywink/socialhome/blob/master/socialhome/static/images/logo/Socialhome-light.svg
+
+    Spoutible
+      - https://spoutible.com
+
+    Threads
+      - https://commons.wikimedia.org/wiki/File:Threads_(app).svg
+
+    Tumblr
+      - https://commons.wikimedia.org/wiki/File:Tumblr-2.svg
+
+    Twitter/X
+      - https://commons.wikimedia.org/wiki/File:X_logo_2023.svg
+
+    Twitter (old)
+      - https://commons.wikimedia.org/wiki/File:Logo_of_Twitter.svg
+
+    Wordpress
+      - https://commons.wikimedia.org/wiki/File:Wordpress-Logo.svg
+
+    WriteFreely
+      - https://github.com/writefreely/writefreely/blob/develop/static/img/wf-sq.png
+
+    YouTube
+      - https://commons.wikimedia.org/wiki/File:YouTube_social_red_circle_(2017).svg
+*/}}
+{{ with .Params.syndication }}
+  <div class="yp-syndication">
+    <small>
+      {{ i18n "content_syndication" }}
+      {{ range $i, $url := (sort . `value` `asc`) }}
+        {{- range $i, $sns := $.Site.Params.sns }}
+          {{- if strings.Contains $url .url }}
+            {{- $icon := .icon }}
+            <a rel="syndication noopener external" class="u-syndication" href="{{ $url | safeURL }}"><img class="icons" alt="{{ $icon }}" loading="lazy" decoding="async" width="2%" height="2%" src="/img/icons/sns-{{ $icon }}"></a>
+          {{- end }}
+        {{- end }}
+      {{- end }}
+    </small>
+  </div>
+{{- end }}
