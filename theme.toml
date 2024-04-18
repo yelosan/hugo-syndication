@@ -1,18 +1,18 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemesSiteBuilder#theme-configuration for an example
 
-name = "Hugo Syndications module"
+name = "Hugo Syndication module"
 license = "MIT"
-licenselink = "https://github.com/yelosan/hugo-syndications/blob/master/LICENSE"
+licenselink = "https://github.com/yelosan/hugo-syndication/blob/master/LICENSE"
 description = "A Hugo module to support displaying syndication links."
 
 # The home page of the theme, where the source can be found.
-homepage = "https://github.com/yelosan/hugo-syndications"
+homepage = "https://github.com/yelosan/hugo-syndication"
 
 # If you have a running demo of the theme.
 #demosite = "https://gohugo.io"
 
-tags = ["syndication", "syndications"]
+tags = ["syndication"]
 features = ["links"]
 
 # If the theme has multiple authors

@@ -1,5 +1,5 @@
-# Hugo Syndications
+# Hugo Syndication
 
-**Hugo Syndications** is a module for Hugo, the world's fastest framework for building websites.
+**Hugo Syndication** is a module for Hugo, the world's fastest framework for building websites.
 
 ## Supported
