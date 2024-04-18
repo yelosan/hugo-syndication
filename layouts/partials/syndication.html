@@ -99,18 +99,16 @@
     YouTube
       - https://commons.wikimedia.org/wiki/File:YouTube_social_red_circle_(2017).svg
 */}}
-{{ with .Params.syndication }}
-  <div class="yp-syndication">
-    <small>
-      {{ i18n "content_syndication" }}
-      {{ range $i, $url := (sort . `value` `asc`) }}
-        {{- range $i, $sns := $.Site.Params.sns }}
-          {{- if strings.Contains $url .url }}
-            {{- $icon := .icon }}
-            <a rel="syndication noopener external" class="u-syndication" href="{{ $url | safeURL }}"><img class="icons" alt="{{ $icon }}" loading="lazy" decoding="async" width="2%" height="2%" src="/img/icons/sns-{{ $icon }}"></a>
-          {{- end }}
+<div class="yp-syndication">
+  <small>
+    {{ i18n "content_syndication" }}
+    {{ range $i, $url := (sort . `value` `asc`) }}
+      {{- range $i, $sns := site.Params.sns }}
+        {{- if strings.Contains $url .url }}
+          {{- $icon := .icon }}
+          <a rel="syndication noopener external" class="u-syndication" href="{{ $url | safeURL }}"><img class="icons" alt="{{ $icon }}" loading="lazy" decoding="async" width="2%" height="2%" src="{{ printf `img/icons/sns-%s` $icon | absURL }}"></a>
         {{- end }}
       {{- end }}
-    </small>
-  </div>
-{{- end }}
+    {{- end }}
+  </small>
+</div>
