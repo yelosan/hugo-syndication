@@ -1,0 +1,26 @@
+/**
+  * GUIDE
+  *
+  * Add the following in your <head> section
+  *
+  * {{- $syndicationcss := resources.Get "css/syndication.css" | minify -}}
+  * <link rel="stylesheet" href="{{ $syndicationcss.RelPermalink }}" media="all" type="text/css" />
+  *
+**/
+.yp-post-syndication ul {
+  display: inline flow;
+  padding-inline-start: 0.5em;
+}
+
+.yp-post-syndication:not(.\9.\9) li {
+  /* BGN: Reset inherited theme styles. */
+    margin: revert;
+    margin-block: revert;
+    margin-inline: revert;
+    padding: revert;
+    padding-block: revert;
+    padding-inline: revert;
+  /* END: Reset inherited theme styles. */
+  display: inline flow;
+  margin-inline: 0.25em;
+}
