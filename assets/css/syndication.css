@@ -24,3 +24,9 @@
   display: inline flow;
   margin-inline: 0.25em;
 }
+
+.yp-post-syndication:not(.\9.\9) img {
+  /* BGN: Reset inherited theme styles. */
+    display: inline flow;
+  /* END: Reset inherited theme styles. */
+}
