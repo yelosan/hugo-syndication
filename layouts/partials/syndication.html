@@ -1,6 +1,8 @@
 {{- /* HOW TO USE
   1. Add this in your single-post template:
-    * partial "syndication.html" .
+      {{ with .Params.syndication }}
+        {{- partial "syndication.html" . }}
+      {{- end }}
 
   2. In your content files add the following:
     * TOML: syndication = ["", ""]

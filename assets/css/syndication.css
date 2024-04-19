@@ -3,7 +3,7 @@
   *
   * Add the following in your <head> section
   *
-  * {{- $syndicationcss := resources.Get "css/syndication.css" | minify -}}
+  * {{- $syndicationcss := resources.Get "css/syndication.css" }}
   * <link rel="stylesheet" href="{{ $syndicationcss.RelPermalink }}" media="all" type="text/css" />
   *
 **/
