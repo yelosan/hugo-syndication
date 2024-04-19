@@ -1,5 +1,5 @@
 # Translations for Hangugeo (Korean)
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
-[content_syndication]
-  other = "콘텐츠 신디케이션:"
+[syndication]
+  other = "신디케이션:"

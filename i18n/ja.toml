@@ -1,5 +1,5 @@
 # Translations for Nihongo (Japanese)
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
-[content_syndication]
-  other = "コンテンツシンジケーション："
+[syndication]
+  other = "シンジケーション："
