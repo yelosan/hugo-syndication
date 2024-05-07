@@ -7,9 +7,10 @@
   * <link rel="stylesheet" href="{{ $syndicationcss.RelPermalink }}" media="all" type="text/css" />
   *
 **/
-.yp-post-syndication ul {
-  display: inline flow;
-  padding-inline-start: 0.5em;
+.yp-post-syndication menu {
+  display: inline flex;
+  flex-wrap: wrap;
+  column-gap: 0.25rem;
 }
 
 .yp-post-syndication:not(.\9.\9) li {
@@ -21,12 +22,18 @@
     padding-block: revert;
     padding-inline: revert;
   /* END: Reset inherited theme styles. */
-  display: inline flow;
-  margin-inline: 0.25em;
+  /* display: inline flow; */
+  /* margin-inline: 0.25em; */
 }
 
 .yp-post-syndication:not(.\9.\9) img {
   /* BGN: Reset inherited theme styles. */
     display: inline flow;
   /* END: Reset inherited theme styles. */
+}
+
+.yp-icons-syndication {
+  inline-size: 1rem;
+  text-decoration: none;
+  vertical-align: middle;
 }

@@ -101,16 +101,16 @@
     YouTube
       - https://commons.wikimedia.org/wiki/File:YouTube_social_red_circle_(2017).svg
 */}}
-<nav aria-label="Syndication Links" class="list-horizontal yp-post-syndication">
+<nav aria-label="Syndication Links" class="yp-post-syndication">
   {{ i18n "syndication" }}
-  <ul>
+  <menu>
   {{ range $i, $url := (sort . `value` `asc`) }}
     {{ range $i, $sns := site.Params.sns }}
       {{- if strings.Contains $url .url }}
         {{- $icon := .icon }}
-        <li><a rel="syndication noopener external" class="u-syndication" href="{{ $url | safeURL }}"><img class="icons" alt="{{ $icon }}" loading="lazy" decoding="async" width="2%" height="2%" src="{{ printf `img/icons/sns-%s` $icon | absURL }}"></a></li>
+        <li><a rel="syndication noopener external" class="u-syndication" href="{{ $url | safeURL }}"><img class="yp-icons-syndication" alt="{{ $icon }}" loading="lazy" decoding="async" width="16px" src="{{ printf `img/icons/sns-%s` $icon | absURL }}"></a></li>
       {{- end }}
     {{- end }}
   {{- end }}
-  </ul>
+  </menu>
 </nav>
