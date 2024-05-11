@@ -11,6 +11,7 @@
   display: inline flex;
   flex-wrap: wrap;
   column-gap: 0.25rem;
+  list-style-type: none;
 }
 
 .yp-post-syndication:not(.\9.\9) li {
