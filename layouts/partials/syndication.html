@@ -106,9 +106,20 @@
   <menu>
   {{ range $i, $url := (sort . `value` `asc`) }}
     {{ range $i, $sns := site.Params.sns }}
+      {{- /*
+        <br/>
+        * $i = {{ $i }}<br/>
+        * $sns = {{ $sns }}<br/>
+      */}}
       {{- if strings.Contains $url .url }}
         {{- $icon := .icon }}
         <li><a rel="syndication noopener external" class="u-syndication" href="{{ $url | safeURL }}"><img class="yp-icons-syndication" alt="{{ $icon }}" loading="lazy" decoding="async" width="16px" src="{{ printf `img/icons/sns-%s` $icon | absURL }}"></a></li>
+        {{- /*
+          <br/>
+          * $url = {{ $url }}<br/>
+          * .url = {{ .url }}<br/>
+          * icon = {{ printf `img/icons/sns-%s` $icon | absURL }}<br/>
+        */}}
       {{- end }}
     {{- end }}
   {{- end }}
