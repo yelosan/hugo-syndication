@@ -47,6 +47,9 @@
     url = 'mastodon.social'
     icon = 'mastodon.png'
   [[params.sns]]
+    url = 'naver.com'
+    icon = 'naver.png'
+  [[params.sns]]
     url = 'p.lu'
     icon = 'peertube.svg'
   [[params.sns]]
