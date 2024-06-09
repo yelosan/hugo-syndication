@@ -20,6 +20,9 @@
     url = 'catodon.social'
     icon = 'catodon.png'
   [[params.sns]]
+    url = 'coracle.social'
+    icon = 'nostr.svg'
+  [[params.sns]]
     url = 'diasp.org'
     icon = 'diaspora.svg'
   [[params.sns]]
@@ -41,6 +44,9 @@
     url = 'instagram.com'
     icon = 'instagram.svg'
   [[params.sns]]
+    url = 'iris.to'
+    icon = 'nostr.svg'
+  [[params.sns]]
     url = 'mastodon.online'
     icon = 'mastodon.png'
   [[params.sns]]
@@ -49,6 +55,12 @@
   [[params.sns]]
     url = 'naver.com'
     icon = 'naver.png'
+  [[params.sns]]
+    url = 'njump.me'
+    icon = 'nostr.svg'
+  [[params.sns]]
+    url = 'nosta.me'
+    icon = 'nostr.svg'
   [[params.sns]]
     url = 'p.lu'
     icon = 'peertube.svg'
@@ -59,8 +71,17 @@
     url = 'plurk.com'
     icon = 'plurk.svg'
   [[params.sns]]
+    url = 'primal.net'
+    icon = 'nostr.svg'
+  [[params.sns]]
     url = 'reddit.com'
     icon = 'reddit.svg'
+  [[params.sns]]
+    url = 'satellite.earth'
+    icon = 'nostr.svg'
+  [[params.sns]]
+    url = 'snort.social'
+    icon = 'nostr.svg'
   [[params.sns]]
     url = 'socialhome.network'
     icon = 'socialhome-black.svg'
